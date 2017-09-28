@@ -243,7 +243,6 @@ class ApiSetup(object):
                            strides=tuple(cntk_layer.parameters.stride),
                            auto_padding=[cntk_layer.parameters.auto_pad],
                            ceil_out_dim=True,
-                           include_pad=True,
                            name=cntk_layer.op_name)
 
     @staticmethod
